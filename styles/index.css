@@ -93,7 +93,9 @@
       bottom: -5%; } }
   @media screen and (max-width: 600px) {
     #home .btn {
-      position: static; } }
+      position: static; }
+    #home .pic {
+      width: 62%; } }
   @media screen and (max-width: 320px) {
     #home .text p {
       font-size: 16px;
