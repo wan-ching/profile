@@ -10,7 +10,8 @@ html, body {
   font-family: 'Karla','Noto Sans TC', sans-serif;
   letter-spacing: .4;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
   @media screen and (max-width: 1440px) {
     html, body {
       font-size: 16px; } }
@@ -20,10 +21,8 @@ p {
 
 body {
   cursor: none; }
-  body.cover_dp {
-    background-color: #0F1145; }
   body.cover_lg {
-    background-color: #F8F1DF; }
+    background-color: #f4f4f4; }
   body.cover_w {
     background-color: #fff; }
   @media screen and (max-width: 991px) {
@@ -103,38 +102,13 @@ img {
   height: auto; }
 
 /* page bg-color */
-.cover_dp, .cover_lg {
-  color: #fff; }
-  .cover_dp header, .cover_dp footer, .cover_lg header, .cover_lg footer {
-    color: #fff; }
-  .cover_dp a, .cover_lg a {
-    color: #fff; }
-  .cover_dp .hamburger, .cover_lg .hamburger {
-    background-color: #fff; }
-    .cover_dp .hamburger::before, .cover_dp .hamburger::after, .cover_lg .hamburger::before, .cover_lg .hamburger::after {
-      background-color: #fff; }
-  .cover_dp .cursor, .cover_lg .cursor {
-    background-color: rgba(255, 255, 255, 0.8); }
-
-.cover_dp .btn-primary {
+.cover_w, .cover_lg {
   color: #0F1145; }
-
-.cover_dp .contact-btn a {
-  color: #0F1145; }
-
-.cover_dp .bookmark {
-  opacity: 1; }
-
-.cover_lg .contact-btn a {
-  color: #F8F1DF; }
-
-.cover_w {
-  color: #0F1145; }
-  .cover_w .hamburger {
+  .cover_w .hamburger, .cover_lg .hamburger {
     background-color: #0F1145; }
-    .cover_w .hamburger::before, .cover_w .hamburger::after {
+    .cover_w .hamburger::before, .cover_w .hamburger::after, .cover_lg .hamburger::before, .cover_lg .hamburger::after {
       background-color: #0F1145; }
-  .cover_w .cursor {
+  .cover_w .cursor, .cover_lg .cursor {
     background-color: rgba(234, 101, 101, 0.6); }
 
 /* ==========================================================================
@@ -152,6 +126,13 @@ img {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+
+@media screen and (max-width: 479px) {
+  .mobile-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .flex-center {
   display: -webkit-box;
@@ -216,6 +197,21 @@ img {
 /* ==========================================================================
  *   spacing
  *==========================================================================*/
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.m-10 {
+  margin: 10px; }
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 /*margin-top*/
 .mt-0 {
   margin-top: 0 !important; }
@@ -1076,6 +1072,30 @@ img {
     .py-100 {
       padding: 66px 0; } }
 
+.width-60 {
+  width: 60%; }
+  @media screen and (max-width: 479px) {
+    .width-60 {
+      width: 100%; } }
+
+.width-80 {
+  width: 80%; }
+  @media screen and (max-width: 479px) {
+    .width-80 {
+      width: 100%; } }
+
+@media screen and (min-width: 992px) {
+  img.width-70 {
+    width: 70% !important; } }
+
+@media screen and (min-width: 992px) {
+  img.width-80 {
+    width: 80% !important; } }
+
+@media screen and (min-width: 992px) {
+  img.width-90 {
+    width: 90% !important; } }
+
 .cursor {
   width: 10px;
   height: 10px;
@@ -1117,7 +1137,10 @@ img {
           transform: translate(-50%, -50%); }
 
 .text-center {
-  text-align: centerv; }
+  text-align: center; }
+
+.text-left {
+  text-align: justify; }
 
 .btn {
   display: -webkit-inline-box;
@@ -1284,6 +1307,34 @@ img {
     height: 32px;
     top: 6%;
     right: -20%; }
+
+.color-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .color-block img {
+    height: 60px !important;
+    width: auto !important;
+    margin: 0 10px; }
+  .color-block.more-color img {
+    height: 52px !important; }
+  @media screen and (max-width: 991px) {
+    .color-block {
+      display: block; }
+      .color-block img {
+        height: auto !important;
+        width: 100% !important;
+        margin: 0 10px; } }
+
+.yellow-paper {
+  padding: 20px 30px;
+  background-color: #F8F1DF; }
 
 /* ==========================================================================
  header

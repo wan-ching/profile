@@ -13,7 +13,7 @@ $(document).ready(function () {
   });
 
   $project.each(function () {
-    $body.addClass("cover_w");
+    $body.addClass("cover_lg");
     $("#project-filter").ckFilter({
       reset: true,
       multiple: false,
