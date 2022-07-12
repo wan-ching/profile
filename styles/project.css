@@ -264,7 +264,7 @@
       height: 6vw;
       max-width: 50px;
       max-height: 50px;
-      right: -3vw; }
+      right: -20px; }
   @media screen and (max-width: 991px) {
     .project-info_head {
       margin-bottom: 40px; } }

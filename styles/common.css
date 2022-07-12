@@ -1330,7 +1330,9 @@ img {
       .color-block img {
         height: auto !important;
         width: 100% !important;
-        margin: 0 10px; } }
+        margin: 0 0; }
+      .color-block.more-color img {
+        height: auto !important; } }
 
 .yellow-paper {
   padding: 20px 30px;
